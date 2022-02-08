@@ -24,7 +24,7 @@ class PokemonsAdapter(val itens: List<Pokemon>) : RecyclerView.Adapter<PokemonsA
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
 
-        val view = layoutInflater.inflate(R.layout.pokemon_item, parent)
+        val view = layoutInflater.inflate(R.layout.pokemon_item, parent, false)
 
         return ViewHolder(view)
     }
